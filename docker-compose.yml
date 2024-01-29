@@ -1,0 +1,10 @@
+version: '8.3'
+services:
+  image-generator:
+    image: "postgres"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB : imageGenerator
+      POSTGRES_USER : imageGenerator
+      POSTGRES_PASSWORD : raw@123
