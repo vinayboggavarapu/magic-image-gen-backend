@@ -1,7 +1,7 @@
 version: '8.3'
 services:
-  image-generator:
-    image: "postgres"
+  imageGenerator:
+    image: postgres
     ports:
       - 5432:5432
     environment:
