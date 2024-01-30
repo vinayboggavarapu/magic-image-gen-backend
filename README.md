@@ -32,10 +32,18 @@
 $ npm install
 ```
 
+## Make Sure to Run npx prisma generate to generate the prisma client
+
+
+
 ## Running the app
 
 ```bash
 # development
+#start docker 
+#Ensure to have a db connnection string in the DATABASE_URL Variable
+
+$docker compose up
 $ npm run start
 
 # watch mode
@@ -45,29 +53,21 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Access the endpoints
+
+## Uncomment // providers: [AppService, { useClass: ThrottlerGuard, provide: APP_GUARD }] and adjust the ttl and limiter to have the rate limiter 
 
 ```bash
-# unit tests
-$ npm run test
+# Swaagger docs endpoint - /api/swagger/docs
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
+Step 1 : /signup
+Step 2 : /get-api-key
+Step-3 : Ensure You have a replit Api token and paste it in env REPLICATE_API_TOKEN
+Step-4  : Paste the api token obtained from /get-api-key
+Step-5  : /magic-image to generate the image
+
 ```
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
