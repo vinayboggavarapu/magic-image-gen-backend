@@ -23,6 +23,12 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*C_u3RtbZnYzRI10IUWbPfg.png" alt="Swagger" />
+# Swaagger docs endpoint - /api/swagger/docs
+
+
+
 ## Installation
 
 ```bash
@@ -55,7 +61,6 @@ $ npm run start:prod
 ## Uncomment // providers: [AppService, { useClass: ThrottlerGuard, provide: APP_GUARD }] and adjust the ttl and limiter to have the rate limiter 
 
 ```bash
-# Swaagger docs endpoint - /api/swagger/docs
 
 
 Step 1 : /signup
